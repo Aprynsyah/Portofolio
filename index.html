@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apriyansyah — Portofolio</title>
+<link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <rect width='100' height='100' fill='%230a0b0f'/>
+  <text x='50' y='65' font-size='60' text-anchor='middle' fill='%23c8a96e' font-family='Arial'>A</text>
+</svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="curRing"></div>
+
+<!-- NAVBAR -->
+<nav class="nav" id="navbar">
+  <a href="#" class="nav-logo">Apri<em>yansyah</em></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#project">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="nav-status"><div class="status-dot"></div>Available for Work</div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="#home" onclick="toggleMenu()">Home</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#education" onclick="toggleMenu()">Education</a>
+  <a href="#experience" onclick="toggleMenu()">Experience</a>
+  <a href="#skills" onclick="toggleMenu()">Skills</a>
+  <a href="#project" onclick="toggleMenu()">Projects</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<button class="theme-btn" onclick="toggleMode()" id="themeBtn">🌙</button>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-bg-text">Apri</div>
+  <span class="hero-vl">Jakarta, Indonesia · 2026</span>
+  <div class="hero-num">
+    <div class="hero-num-text">001</div>
+    <div class="hero-num-line"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow a1">
+      <div class="hero-eyebrow-line"></div>
+      <span class="hero-eyebrow-text">Web Developer & Cyber Security</span>
+    </div>
+    <h1 class="hero-name a2">Apri<em>yansyah</em></h1>
+    <p class="hero-tagline a3">building the web, securing the future</p>
+    <div class="hero-footer">
+      <p class="hero-desc a4">
+        Mahasiswa <strong>Teknik Informatika Universitas Pamulang</strong> dengan passion dalam menciptakan pengalaman web yang elegan, fungsional, dan aman.
+      </p>
+      <div class="hero-cta a5">
+        <a href="CV-Apriyansyah.pdf" download class="btn btn-gold">Download CV ↓</a>
+        <a href="#contact" class="btn btn-outline">Let's Talk →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section">
+    <div class="section-header" data-aos="fade-up">
+      <div>
+        <p class="section-index">01 — About</p>
+        <h2 class="section-title">Tentang<br><em>Saya</em></h2>
+      </div>
+      <p class="section-sub">Seorang builder yang percaya bahwa estetika dan fungsi harus berjalan beriringan.</p>
+    </div>
+    <div class="about-layout">
+      <div data-aos="fade-right">
+        <div class="about-body">
+          <p>Saya adalah mahasiswa <strong>Teknik Informatika</strong> yang percaya bahwa teknologi terbaik adalah yang tidak terlihat — bekerja mulus di balik layar sambil memberikan pengalaman luar biasa di depannya.</p>
+          <p>Fokus utama saya ada di dua sisi: membangun antarmuka web yang <strong>cepat, responsif, dan intuitif</strong>, serta memastikan setiap sistem yang saya bangun memiliki fondasi keamanan yang kokoh.</p>
+          <p>Latar belakang sebagai Senior Barista mengajarkan <strong>konsistensi, kepemimpinan tim, dan standar kualitas yang tidak pernah dikompromikan</strong> — nilai-nilai yang kini saya bawa ke setiap baris kode.</p>
+        </div>
+        <div class="stat-row" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-box"><div class="stat-n">3+</div><div class="stat-l">Tahun Pengalaman</div></div>
+          <div class="stat-box"><div class="stat-n">10+</div><div class="stat-l">Project Selesai</div></div>
+          <div class="stat-box"><div class="stat-n">5+</div><div class="stat-l">Tech Stack</div></div>
+          <div class="stat-box"><div class="stat-n">∞</div><div class="stat-l">Semangat Belajar</div></div>
+        </div>
+      </div>
+      <div class="about-photo" data-aos="fade-left">
+        <div class="photo-frame">
+            
+            <img src="asset/foto.jpeg" alt="Apriyansyah"
+            onerror="this.parentElement.classList.add('no-img');this.style.display='none'">
+
+            <div class="photo-overlay"></div>
+
+            <div class="photo-caption">
+            Apriyansyah — Jakarta, 2026
+            </div>
+
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- EDUCATION -->
+<section id="education" style="background:var(--ink2);padding:1px 0;">
+  <div class="section">
+    <div class="section-header" data-aos="fade-up">
+      <div>
+        <p class="section-index">02 — Education</p>
+        <h2 class="section-title">Pendidikan<br><em>Formal</em></h2>
+      </div>
+      <p class="section-sub">Fondasi akademis yang membentuk cara berpikir analitis dan sistematis.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item" data-aos="fade-up">
+        <div class="tl-left">
+          <span class="tl-period">2022 — Kini</span>
+          <span class="tl-badge">Aktif</span>
+        </div>
+        <div>
+          <h3 class="tl-role">S1 Teknik Informatika</h3>
+          <p class="tl-org">Universitas Pamulang</p>
+          <p class="tl-desc">Fokus pada pengembangan web, pemrograman terstruktur, dan keamanan sistem. Aktif mengembangkan project berbasis teknologi modern serta mendalami algoritma dan keamanan jaringan.</p>
+        </div>
+      </div>
+      <div class="tl-item" data-aos="fade-up">
+        <div class="tl-left">
+          <span class="tl-period">2016 — 2019</span>
+          <span class="tl-badge">Lulus</span>
+        </div>
+        <div>
+          <h3 class="tl-role">SMK Jurusan Akuntansi</h3>
+          <p class="tl-org">SMK Al Fajar Jakarta</p>
+          <p class="tl-desc">Mempelajari dasar-dasar akuntansi, manajemen keuangan, dan pengolahan data. Membentuk kemampuan analisis, ketelitian, dan kedisiplinan dalam bekerja.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section">
+    <div class="section-header" data-aos="fade-up">
+      <div>
+        <p class="section-index">03 — Experience</p>
+        <h2 class="section-title">Riwayat<br><em>Kerja</em></h2>
+      </div>
+      <p class="section-sub">Pengalaman profesional yang membangun karakter dan etos kerja.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item" data-aos="fade-up">
+        <div class="tl-left">
+          <span class="tl-period">2020 — 2022</span>
+          <span class="tl-badge">Senior</span>
+        </div>
+        <div>
+          <h3 class="tl-role">Senior Barista</h3>
+          <p class="tl-org">PT Kurnia Boga Narayan</p>
+          <p class="tl-desc">Memimpin tim operasional harian, mengatur jadwal shift, memastikan standar kualitas produk terjaga konsisten, dan menyelesaikan target operasional secara efisien.</p>
+        </div>
+      </div>
+      <div class="tl-item" data-aos="fade-up">
+        <div class="tl-left">
+          <span class="tl-period">2019 — 2020</span>
+          <span class="tl-badge">Barista</span>
+        </div>
+        <div>
+          <h3 class="tl-role">Barista</h3>
+          <p class="tl-org">PT Sour Sally Group</p>
+          <p class="tl-desc">Melayani pelanggan dengan standar pelayanan prima, menjaga kualitas setiap produk, dan mengelola inventaris bahan baku secara sistematis dan efisien.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- SKILLS -->
+<section id="skills" style="background:var(--ink2);padding:1px 0;">
+  <div class="section">
+    <div class="section-header" data-aos="fade-up">
+      <div>
+        <p class="section-index">04 — Skills</p>
+        <h2 class="section-title">Kemampuan<br><em>Teknis</em></h2>
+      </div>
+      <p class="section-sub">Stack yang saya kuasai dan terus kembangkan setiap harinya.</p>
+    </div>
+    <div class="skills-layout" data-aos="fade-up">
+      <div class="skill-cell">
+        <div class="skill-top"><span class="skill-label">HTML / CSS</span><span class="skill-pct">90%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+        <div class="skill-tags"><span class="skill-tag">Flexbox</span><span class="skill-tag">Grid</span><span class="skill-tag">Animations</span><span class="skill-tag">Responsive</span></div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-top"><span class="skill-label">JavaScript</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+        <div class="skill-tags"><span class="skill-tag">ES6+</span><span class="skill-tag">DOM</span><span class="skill-tag">Fetch API</span><span class="skill-tag">OOP</span></div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-top"><span class="skill-label">PHP & MySQL</span><span class="skill-pct">85%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+        <div class="skill-tags"><span class="skill-tag">Laravel</span><span class="skill-tag">PDO</span><span class="skill-tag">REST API</span><span class="skill-tag">ORM</span></div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-top"><span class="skill-label">Python</span><span class="skill-pct">70%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="70"></div></div>
+        <div class="skill-tags"><span class="skill-tag">TensorFlow</span><span class="skill-tag">NumPy</span><span class="skill-tag">Pandas</span><span class="skill-tag">CNN</span></div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-top"><span class="skill-label">Cyber Security</span><span class="skill-pct">75%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+        <div class="skill-tags"><span class="skill-tag">OWASP</span><span class="skill-tag">Pentesting</span><span class="skill-tag">Network Sec</span></div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-top"><span class="skill-label">Git & Linux</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+        <div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Bash</span><span class="skill-tag">Ubuntu</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<div class="proj-list">
+
+  <!-- PROJECT 1 -->
+<div class="proj-row" data-aos="fade-up">
+
+  <div class="proj-image">
+    <img src="asset/javamart.png" alt="JavaMart">
+  </div>
+
+  <div class="proj-content">
+    <div class="proj-num">01</div>
+    <p class="proj-type">E-Commerce System</p>
+    <h3 class="proj-name">JavaMart (Mini E-Commerce)</h3>
+    
+    <p class="proj-desc">
+      Platform e-commerce dengan fitur katalog produk, keranjang belanja, checkout, dan manajemen pesanan.
+    </p>
+
+    <div class="proj-pills">
+      <span class="proj-pill">PHP</span>
+      <span class="proj-pill">MySQL</span>
+      <span class="proj-pill">Bootstrap</span>
+    </div>
+
+    <div class="proj-actions">
+      <a href="#" class="proj-btn primary">
+        <span>Live Demo</span>
+        <span class="icon">↗</span>
+      </a>
+
+      <a href="#" class="proj-btn outline">
+        <span>GitHub</span>
+        <span class="icon">💻</span>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+  <!-- PROJECT 2 -->
+<div class="proj-row" data-aos="fade-up" data-aos-delay="80">
+
+  <div class="proj-image">
+    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Sistem Pakar Gigi">
+  </div>
+
+  <div class="proj-content">
+    <div class="proj-num">02</div>
+
+    <p class="proj-type">Web Application</p>
+
+    <h3 class="proj-name">Sistem Pakar Diagnosa Gigi</h3>
+
+    <p class="proj-desc">
+      Aplikasi berbasis web menggunakan metode Forward Chaining untuk membantu diagnosis penyakit gigi berdasarkan gejala yang dipilih pengguna.
+    </p>
+
+    <div class="proj-pills">
+      <span class="proj-pill">PHP</span>
+      <span class="proj-pill">MySQL</span>
+      <span class="proj-pill">Forward Chaining</span>
+    </div>
+
+    <div class="proj-actions">
+      <a href="#" class="proj-btn primary">
+        <span>Demo</span>
+        <span class="icon">↗</span>
+      </a>
+
+      <a href="#" class="proj-btn outline">
+        <span>GitHub</span>
+        <span class="icon">💻</span>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+  <!-- PROJECT 3 -->
+<div class="proj-row" data-aos="fade-up" data-aos-delay="160">
+
+  <div class="proj-image">
+    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80" alt="AI CNN">
+  </div>
+
+  <div class="proj-content">
+    <div class="proj-num">03</div>
+
+    <p class="proj-type">AI / Machine Learning</p>
+
+    <h3 class="proj-name">Image Classification CNN</h3>
+
+    <p class="proj-desc">
+      Model deep learning berbasis Convolutional Neural Network (CNN) untuk klasifikasi gambar 
+      menggunakan TensorFlow dengan akurasi tinggi serta implementasi GUI interaktif.
+    </p>
+
+    <div class="proj-pills">
+      <span class="proj-pill">Python</span>
+      <span class="proj-pill">TensorFlow</span>
+      <span class="proj-pill">Deep Learning</span>
+    </div>
+
+    <div class="proj-actions">
+      <a href="#" class="proj-btn primary">
+        <span>Demo</span>
+        <span class="icon">↗</span>
+      </a>
+
+      <a href="#" class="proj-btn outline">
+        <span>GitHub</span>
+        <span class="icon">💻</span>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+  <!-- PROJECT 4 -->
+<div class="proj-row" data-aos="fade-up" data-aos-delay="240">
+
+  <div class="proj-image">
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Dashboard System">
+  </div>
+
+  <div class="proj-content">
+    <div class="proj-num">04</div>
+
+    <p class="proj-type">Dashboard System</p>
+
+    <h3 class="proj-name">Dashboard Karang Taruna</h3>
+
+    <p class="proj-desc">
+      Sistem monitoring kegiatan dan keuangan organisasi dengan visualisasi data interaktif,
+      grafik dinamis, serta fitur CRUD berbasis web yang responsif.
+    </p>
+
+    <div class="proj-pills">
+      <span class="proj-pill">PHP</span>
+      <span class="proj-pill">Chart.js</span>
+      <span class="proj-pill">JavaScript</span>
+    </div>
+
+    <div class="proj-actions">
+      <a href="#" class="proj-btn primary">
+        <span>Live</span>
+        <span class="icon">↗</span>
+      </a>
+
+      <a href="#" class="proj-btn outline">
+        <span>GitHub</span>
+        <span class="icon">💻</span>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<hr class="rule">
+
+<!-- CONTACT -->
+    <div class="contact-layout">
+
+  <!-- LEFT: CONTACT INFO -->
+  <div data-aos="fade-right">
+
+    <h3 class="contact-big">Punya ide <em>menarik?</em></h3>
+    <p class="contact-note">
+      Saya selalu terbuka untuk peluang baru. Hubungi saya melalui channel manapun yang paling nyaman untuk Anda.
+    </p>
+
+    <div class="contact-items">
+
+      <!-- EMAIL -->
+      <a href="mailto:apriyansyah@email.com" class="contact-item">
+        <div class="contact-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="contact-meta">
+          <span class="contact-clabel">Email</span>
+          <span class="contact-cval">apriyansyah@gmail.com</span>
+        </div>
+        <span class="contact-arrow">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </span>
+      </a>
+
+      <!-- LINKEDIN -->
+      <a href="https://linkedin.com/in/apriyansyah" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-icon">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="contact-meta">
+          <span class="contact-clabel">LinkedIn</span>
+          <span class="contact-cval">linkedin.com/in/apriyansyah</span>
+        </div>
+        <span class="contact-arrow">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </span>
+      </a>
+
+      <!-- GITHUB -->
+      <a href="https://github.com/apriyansyah" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-icon">
+          <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="contact-meta">
+          <span class="contact-clabel">GitHub</span>
+          <span class="contact-cval">github.com/apriyansyah</span>
+        </div>
+        <span class="contact-arrow">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </span>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <!-- BRAND -->
+      <div class="footer-col">
+        <p class="footer-brand">Apri<em>yansyah</em></p>
+        <p class="footer-body">
+          Web Developer & Cyber Security Enthusiast yang membangun solusi digital modern,
+          aman, dan berdampak.
+        </p>
+      </div>
+
+      <!-- NAVIGATION -->
+      <div class="footer-col">
+        <p class="footer-col-title">Navigation</p>
+        <ul class="footer-col-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Projects</a></li>
+        </ul>
+      </div>
+
+      <!-- CONNECT -->
+      <div class="footer-col">
+        <p class="footer-col-title">Connect</p>
+        <ul class="footer-col-links">
+
+          <li>
+            <a href="mailto:apriyansyah@email.com">
+              <i class="fa-solid fa-envelope"></i> Email
+            </a>
+          </li>
+
+          <li>
+            <a href="https://linkedin.com/in/apriyansyah" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/apriyansyah" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </li>
+
+          <li>
+            <a href="CV-Apriyansyah.pdf" download>
+              <i class="fa-solid fa-file-arrow-down"></i> Download CV
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Apriyansyah. All rights reserved.</span>
+    </div>
+
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
