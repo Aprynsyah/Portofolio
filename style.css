@@ -1567,3 +1567,211 @@ button,
     opacity: 0;
   }
 }
+
+/* =========================
+   CHATBOT FINAL FIX
+========================= */
+
+.chatbot-toggle {
+  position: fixed;
+  right: 32px;
+  bottom: 150px;
+  z-index: 500;
+  width: 58px;
+  height: 58px;
+  border: 4px solid var(--dark-border);
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple), var(--pink));
+  color: #fff;
+  font-size: 22px;
+  box-shadow: 6px 6px 0 var(--dark-border);
+  transition: 0.2s ease;
+}
+
+.chatbot-toggle:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 var(--dark-border);
+}
+
+.chatbot-widget {
+  position: fixed;
+  right: 32px;
+  bottom: 225px;
+  z-index: 550;
+  width: 370px;
+  height: 500px;
+  max-width: calc(100vw - 40px);
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border: 4px solid var(--dark-border);
+  border-radius: 30px;
+  box-shadow: 10px 10px 0 var(--dark-border);
+  overflow: hidden;
+}
+
+.chatbot-widget.open {
+  display: flex;
+}
+
+/* HEADER */
+.chatbot-header {
+  height: 90px;
+  flex-shrink: 0;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #fff8cc, #ffd6ea);
+  border-bottom: 4px solid var(--dark-border);
+}
+
+.chatbot-badge {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 800;
+  color: var(--purple);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.chatbot-header h4 {
+  font-family: var(--serif);
+  font-size: 25px;
+  color: var(--text);
+}
+
+.chatbot-close {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border: 3px solid var(--dark-border);
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 900;
+  box-shadow: 3px 3px 0 var(--dark-border);
+}
+
+/* ROOM CHAT */
+.chatbot-messages {
+  flex: 1;
+  min-height: 0;
+  padding: 18px;
+  overflow-y: auto;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 79, 163, 0.10), transparent 25%),
+    radial-gradient(circle at 80% 80%, rgba(39, 197, 255, 0.12), transparent 25%),
+    #fff8ec;
+}
+
+/* INPUT BAR */
+.chatbot-form {
+  height: 86px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  background: #fff;
+  border-top: 4px solid var(--dark-border);
+}
+
+.chatbot-form input {
+  flex: 1;
+  min-width: 0;
+  height: 48px;
+  padding: 0 16px;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--text);
+  background: #fff8ec;
+  border: 3px solid var(--dark-border);
+  border-radius: 999px;
+  outline: none;
+}
+
+.chatbot-form button {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border: 3px solid var(--dark-border);
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--orange), var(--pink));
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 3px 3px 0 var(--dark-border);
+}
+
+.chatbot-form button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--dark-border);
+}
+
+/* MESSAGE BUBBLE */
+.bot-message,
+.user-message {
+  width: fit-content;
+  max-width: 84%;
+  margin-bottom: 14px;
+  padding: 13px 15px;
+  font-size: 14px;
+  line-height: 1.55;
+  white-space: pre-line;
+  word-break: break-word;
+  border: 3px solid var(--dark-border);
+  border-radius: 18px;
+  box-shadow: 4px 4px 0 var(--dark-border);
+}
+
+.bot-message {
+  background: #fff;
+  color: var(--text);
+  border-top-left-radius: 5px;
+}
+
+.user-message {
+  margin-left: auto;
+  background: linear-gradient(135deg, var(--blue), var(--purple));
+  color: #fff;
+  border-top-right-radius: 5px;
+}
+
+/* SCROLLBAR CHAT */
+.chatbot-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+  background: #fff1d6;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+  background: var(--pink);
+  border-radius: 999px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .chatbot-toggle {
+    right: 22px;
+    bottom: 145px;
+  }
+
+  .chatbot-widget {
+    left: 18px;
+    right: 18px;
+    bottom: 220px;
+    width: auto;
+    height: 480px;
+    max-width: none;
+  }
+
+  .bot-message,
+  .user-message {
+    max-width: 90%;
+  }
+}
