@@ -218,3 +218,92 @@ if (typingText) {
 
   typeEffect();
 }
+
+/* AI Chatbot n8n */
+const chatbotToggle = document.getElementById("chatbotToggle");
+const chatbotWidget = document.getElementById("chatbotWidget");
+const chatbotClose = document.getElementById("chatbotClose");
+const chatbotForm = document.getElementById("chatbotForm");
+const chatbotInput = document.getElementById("chatbotInput");
+const chatbotMessages = document.getElementById("chatbotMessages");
+
+const N8N_WEBHOOK_URL = "https://aprynsyah6446.app.n8n.cloud/webhook/portfolio-chatbot";
+
+if (chatbotToggle && chatbotWidget) {
+  chatbotToggle.addEventListener("click", () => {
+    chatbotWidget.classList.toggle("open");
+  });
+}
+
+if (chatbotClose && chatbotWidget) {
+  chatbotClose.addEventListener("click", () => {
+    chatbotWidget.classList.remove("open");
+  });
+}
+
+function addChatMessage(message, sender = "bot") {
+  if (!chatbotMessages) return;
+
+  const messageElement = document.createElement("div");
+  messageElement.className = sender === "user" ? "user-message" : "bot-message";
+  messageElement.textContent = message;
+
+  chatbotMessages.appendChild(messageElement);
+  chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+}
+
+if (chatbotForm) {
+  chatbotForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const message = chatbotInput.value.trim();
+
+    if (!message) return;
+
+    addChatMessage(message, "user");
+    chatbotInput.value = "";
+
+    addChatMessage("Sedang mengetik...", "bot");
+
+    try {
+      const response = await fetch(N8N_WEBHOOK_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          message: message,
+          source: "portfolio-website"
+        })
+      });
+
+      const data = await response.json();
+
+      const typingMessage = chatbotMessages.lastElementChild;
+      if (typingMessage) typingMessage.remove();
+
+      addChatMessage(data.reply || data.message || "Maaf, saya belum bisa menjawab pesan itu.", "bot");
+
+    } catch (error) {
+      const typingMessage = chatbotMessages.lastElementChild;
+      if (typingMessage) typingMessage.remove();
+
+      addChatMessage("Terjadi error saat menghubungi AI. Coba lagi nanti.", "bot");
+      console.error("Chatbot error:", error);
+    }
+  });
+}
+
+function addChatMessage(message, sender = "bot") {
+  if (!chatbotMessages) return;
+
+  const messageElement = document.createElement("div");
+  messageElement.className = sender === "user" ? "user-message" : "bot-message";
+  messageElement.textContent = message;
+
+  chatbotMessages.appendChild(messageElement);
+
+  setTimeout(() => {
+    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  }, 50);
+}
